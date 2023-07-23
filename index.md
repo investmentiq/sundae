@@ -5,6 +5,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: default
-title: Your Gateway to USA Investments.
+title: Your Gateway to USA.
 featured-img: sleek
 ---
