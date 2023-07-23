@@ -1,0 +1,10 @@
+<svg id="logo" height="64" viewBox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    #logo path {fill:none; stroke:#333; stroke-width:2.5; transition: 0.2s ease-out}
+    #logo:hover path {stroke:#277cea; transition: 0.2s ease-in}
+    #logo:hover #left {transform: translate(4px, 0)}
+    #logo:hover #right {transform: translate(-4px, 0)}
+  </style>
+  <path id="left"  d="m 48,20 c 0,20 -20,16 -20,24 0,-8 -20,-4 -20,-24" />
+  <path id="right" d="m 56,20 c 0,20 -20,16 -20,24 0,-8 -20,-4 -20,-24" />
+</svg>

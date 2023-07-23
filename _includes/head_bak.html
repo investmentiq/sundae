@@ -1,0 +1,33 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+
+  <!-- favicons generated with https://realfavicongenerator.net -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/favicon-16x16.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/icons/site.webmanifest' | relative_url }}">
+  <link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
+  <!-- declare favicon so it is found on subsites such as https://juseg.github.io/keels -->
+  <link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}">
+  <meta name="msapplication-TileColor" content="#333333">
+  <meta name="msapplication-config" content="{{ '/assets/icons/browserconfig.xml' | relative_url }}">
+  <meta name="theme-color" content="#ffffff">
+
+  {% if site.google_tag_manager %}
+
+    {% include gtm.html %}
+
+  {% endif %}
+  <!-- defer loading noncritical css (https://www.filamentgroup.com/lab/load-css-simpler/) -->
+  <link rel="stylesheet" href="{{ '/assets/css/critical.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/noncritical.css' | relative_url }}" media="print" onload="this.media='all'">
+
+  <!-- optional stylesheets -->
+  {% if page.scripts contains "magnificpopup" %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" media="print" onload="this.media='all'">
+  {% endif %}
+</head>

@@ -1,0 +1,41 @@
+{% if page.featured-img %}
+<div class="hero lazyload" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.featured-img }}.jpg">
+{% elsif page.header.image %}
+<div class="hero lazyload" data-bg="{{ page.header.image | relative_url }}">
+{% endif %}
+{% if page.featured-img or page.header.image %}
+  <div class="hero__wrap">
+    {% if post.categories or page.categories %}
+      <div class="hero__categories">
+        {% if post %}
+          {% assign categories = post.categories %}
+        {% else %}
+          {% assign categories = page.categories %}
+        {% endif %}
+        {% for category in categories %}
+          <a class="label" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
+    <h1 class="hero__title">{{ page.title }}</h1>
+    {% if post %}
+    <p class="hero__meta">
+      <span>
+        <time>{{ page.date | date_to_string }}</time>&nbsp;&middot;
+      </span>
+      <span>
+          {% assign words = content | number_of_words %}
+            {% if words < 360 %}
+              1 min
+            {% else %}
+              {{ words | divided_by:180 }} mins
+          {% endif %} read
+      </span>
+    </p>
+    {% endif %}
+  </div>
+</div>
+{% else %}
+<div class="hero--empty"></div>
+{% endif %}

@@ -1,0 +1,25 @@
+{% if include.id %}
+  {% assign gallery = page[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
+
+<figure class="{{ include.class | default: "gallery" }}">
+  {% for item in gallery %}
+    {% if item.target %}
+    <a href="{{ item.target | relative_url }}"
+       {% if item.title %}title="{{ item.title }}"{% endif %}>
+    {% endif %}
+      <img src="{{ item.image | relative_url }}"
+           alt="{{ item.alt | default: item.title }}"
+           class="blur lazyload">
+    {% if item.target %}
+    </a>
+    {% endif %}
+  {% endfor %}
+  {% if include.caption %}
+  <figcaption>
+    {{ include.caption | markdownify | remove: "<p>" | remove: "</p>"  }}
+  </figcaption>
+  {% endif %}
+</figure>

@@ -1,0 +1,68 @@
+// Figures
+figure {
+    text-align: center}
+figure > a > img,
+figure > img {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #0003}
+figure > a,
+figure > img {
+    margin-bottom: 0.5em}
+figure > a,
+figure > a:hover,
+figure > a:focus {
+    border: 0}
+figure > a:hover img,
+figure > a:focus img{
+    box-shadow: 0 2px 40px 0 #0003}
+figure > figcaption {
+    color: $grey;
+    font-size: 0.875em;
+    margin-bottom: 0.5em}
+
+// Left and right alignment
+@media (min-width: $sm) {
+  .left {
+    float: left;
+    margin-right: 1em;
+    text-align: left}
+  .right {
+    float: right;
+    margin-left: 1em;
+    text-align: right}}
+
+// Galleries
+@media (min-width: $sm) {
+  figure.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between}
+  figure.gallery figcaption {
+    width:100%}
+  figure.gallery>a,
+  figure.gallery>img {
+    width:calc(33.3333% - 0.5em)}}
+
+// Video buttons
+figure.video > a {
+  display:block;
+  position: relative}
+figure.video > a::after {
+  background-color: #3333;
+  border-radius: 4px;
+  color: #fffc;
+  content: "\25B6";
+  font-size: 1.25em;
+  padding: 0.25em 1em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)}
+figure.video > a:hover::after {
+  background-color: #3336;
+  color: #ffff}
+
+// Magnific popup
+.mfp-figure figcaption {
+  margin: 0;
+}

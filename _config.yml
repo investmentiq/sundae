@@ -1,0 +1,48 @@
+# SITE CONFIGURATION
+title: InvestiLogi USA
+description: >
+ Your investments in the USA made easy. We're here for all your investment needs, including but not limited to logistics, real estate, and beyond. We offer full investment services, helping you find the best investment opportunities and handling the operations for your logistics investments, providing you passive income opportunities. We do all the hard work so you can enjoy watching your investments flourish. Contact us and learn how we can help you.
+baseurl: "/sundae" # the subpath of your site, e.g. /blog
+url: https://investmentiq.github.io/
+
+# THEME SETTINGS
+tagline: Investing made easy
+navigation:
+  - {name: 'Home', link: '/'}
+  - {name: 'About', link: '/about'}
+  - {name: 'Contact', link: '/contact'}
+email: investilogiusa@gmail.com  # email for form submission
+# github_username: investmentiq
+instagram_username: cem077
+twitter_username: investilogiusa
+# disqus:
+#   shortname:  # uncomment to enable comments
+# google_tag_manager: GTM-XXXXXXX  # uncomment to enable GTM.
+# service_worker: true
+
+# BUILD SETTINGS
+# theme: jekyll-keels  # uncomment to use the theme as a ruby gem
+# remote_theme: juseg/keels  # uncomment to use as a remote theme
+exclude:
+  - README.md
+  - node_modules
+  - script
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - npm-debug.log
+  - gulpfile.js
+  - sleek.jpg
+include:
+  - _pages
+permalink: /:title/
+compress_html:
+  clippings: all
+
+# JEKYLL PLUGINS
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-sass-converter
