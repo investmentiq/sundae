@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ABD’ye açılan kapınız.
+title: Your Gateway to Investing in the USA
 featured-img: sleek
 ---
 
