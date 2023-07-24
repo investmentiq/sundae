@@ -1,3 +1,16 @@
+<style>
+  /* CSS to style the language selector */
+  .header__language-selector {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* Adjust the gap between flag icon and country code as needed */
+  }
+  /* CSS to style the language codes (TR and EN) */
+  .header__language-selector div {
+    font-size: 10px; /* Adjust the font size as needed */
+  }
+</style>
+
 <header class="header" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
   <div class="container">
     <div class="header__inner">
@@ -19,6 +32,21 @@
           {% endfor %}
         </div>
       </nav>
+      <!-- Language Selector with World Logos -->
+      <div class="header__language-selector">
+        <a href="{{ '/' | relative_url }}">
+          <div>
+            <img src="{{ '/us24pxl.png' | relative_url }}" alt="US" />
+          </div>
+          <div>US</div>
+        </a>
+        <a href="https://investilogiusa.com">
+          <div>
+            <img src="{{ '/tr24pxl.png' | relative_url }}" alt="TR" />
+          </div>
+          <div>TR</div>
+        </a>
+      </div>
       <div class="header__toggle">
         <span></span>
         <span></span>
