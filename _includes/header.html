@@ -1,16 +1,3 @@
-<style>
-  /* CSS to style the language selector */
-  .header__language-selector {
-    display: flex;
-    align-items: center;
-    gap: 4px; /* Adjust the gap between flag icon and country code as needed */
-  }
-  /* CSS to style the language codes (TR and EN) */
-  .header__language-selector div {
-    font-size: 10px; /* Adjust the font size as needed */
-  }
-</style>
-
 <header class="header" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
   <div class="container">
     <div class="header__inner">
@@ -32,21 +19,18 @@
           {% endfor %}
         </div>
       </nav>
-      <!-- Language Selector with World Logos -->
-      <div class="header__language-selector">
-        <a href="{{ '/' | relative_url }}">
-          <div>
-            <img src="{{ '/us24pxl.png' | relative_url }}" alt="US" />
-          </div>
-          <div>US</div>
-        </a>
-        <a href="https://investilogiusa.com">
-          <div>
-            <img src="{{ '/tr24pxl.png' | relative_url }}" alt="TR" />
-          </div>
-          <div>TR</div>
-        </a>
+      <!-- Language Selector with Globe Logo -->
+      <div class="language-selector-dropdown">
+        <button class="language-selector-button" onclick="toggleLanguageDropdown()">
+          <img src="/language-7-32.png" alt="Globe" class="globe-icon">
+        </button>
+        <div class="language-dropdown-content" id="languageDropdown">
+          <a href="https://investilogiusa.com" hreflang="tr">Türkçe</a>
+          <a href="/" hreflang="en">English</a>
+          <!-- Add more language options if needed -->
+        </div>
       </div>
+      <!-- Mobile Menu Toggle -->
       <div class="header__toggle">
         <span></span>
         <span></span>
@@ -55,3 +39,81 @@
     </div>
   </div>
 </header>
+
+<style>
+  /* CSS for the dropdown language selector */
+  .language-selector-dropdown {
+    position: relative;
+  }
+
+  .language-selector-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .globe-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px; /* Add margin to separate the globe icon from the navigation titles */
+  }
+
+  .language-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 8px;
+    z-index: 1;
+    right: 0;
+  }
+
+  .language-dropdown-content a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .language-dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown content when the button is clicked */
+  .language-selector-dropdown:hover .language-dropdown-content {
+    display: block;
+  }
+
+  /* Styles for mobile layout */
+  @media screen and (max-width: 768px) {
+    .header__links {
+      display: none; /* Hide the navigation titles by default on mobile */
+    }
+    .header__toggle {
+      display: flex;
+      align-items: center;
+    }
+    .language-selector-dropdown {
+      display: block; /* Show the language selector on mobile devices */
+      margin-left: 00px; /* Add margin to separate the globe icon from the hamburger menu */
+    }
+  }
+</style>
+
+<script>
+  // JavaScript to toggle the language dropdown
+  function toggleLanguageDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  }
+
+  // Close the dropdown when the user clicks outside of it
+  window.addEventListener("click", function(event) {
+    if (!event.target.matches(".language-selector-button")) {
+      var dropdown = document.getElementById("languageDropdown");
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      }
+    }
+  });
+</script>
