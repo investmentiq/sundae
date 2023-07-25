@@ -6,28 +6,41 @@ permalink: /about/
 
 <html>
 
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>About InvestiLogi USA</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Replace "styles.css" with the path to your CSS file -->
+  <style>
+    /* Add your CSS styles here to format the About section */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
-
 <body>
-  <div class="about-container">
-    <h2>InvestiLogi USA: Your Trusted Investment Advisory Partner</h2>
 
-    <p>We are a leading investment advisory firm specializing in the logistics and real estate sectors. Our mission is to provide our clients with the finest investment opportunities, guiding them towards their financial goals. Leveraging deep market insights, strategic partnerships, and innovative technologies, we strive to deliver exceptional value to our clients.</p>
+  <h2>Our Vision: Simplifying US Investments for You</h2>
+  <p>At InvestiLogi USA, our vision is to streamline US investments, providing accessibility and convenience, while presenting you with attractive passive income opportunities. By expertly managing the operational aspects of your investments, we offer you the ease of achieving lucrative returns.</p>
 
-    <h3>Our Vision: Simplifying US Investments for You</h3>
+  <h2>Meet Our Founder, Vahit C. Yapıcı</h2>
+  <p>Vahit C. Yapıcı has a strong background in business and economics. He holds a Bachelor of Arts degree in Business Studies from the University of Wolverhampton and a Master of Business Administration degree from the University of Westminster in the United Kingdom.</p>
+  <p>Before settling in the USA in 2006, he served as a board member at Elektromek PLC in Istanbul. Later, he ventured into the US market as a business development manager at Miami Offset, Florida, and obtained a real estate license in the same state. Alongside his family, he established Cempay International Real Estate LLC in Turkey, a company offering international real estate services with a focus on marketing construction projects from cities like Miami, New York, and Las Vegas in Turkey.</p>
+  <p>In addition to his real estate expertise, his passion for the finance sector has contributed to his proficiency in risk analysis and management. Recognizing the potential in the US logistics sector, he has forged strategic partnerships and gained valuable experience in this domain.</p>
 
-    <p>At InvestiLogi USA, our vision is to make investing in the US accessible and hassle-free, presenting you with passive income prospects. By assuming the operational burden of your investments, we offer you the convenience of achieving lucrative returns with ease.</p>
+  <h2>Partner with InvestiLogi USA Today</h2>
+  <p>Embark on a journey of secure and rewarding investments. Our dedication lies in empowering you with the knowledge and resources needed to make informed investment decisions, thereby ensuring your financial success. Welcome to a world of exceptional investment opportunities with InvestiLogi USA.</p>
 
-    <h3>Meet Our Founder, Vahit C. Yapıcı</h3>
-
-    <p>With a background in business and economics, our founder completed his undergraduate and postgraduate studies in the United Kingdom before settling in the USA in 2006. Having served as a business development manager in Miami Offset, Florida, he later obtained a real estate license in the same state. Alongside his family, he established Cempay International Real Estate LLC in Turkey, offering international real estate services to a wide array of investors. He successfully marketed construction projects from cities like Miami, New York, and Las Vegas in Turkey. Beyond real estate, his passion for the finance sector has contributed to his expertise in risk analysis and management. Moreover, seizing the increasing profitability in the US logistics sector, he has forged strategic partnerships and gained valuable experience in this domain.</p>
-
-    <p>Partner with InvestiLogi USA today and embark on a journey of secure and rewarding investments. We are dedicated to empowering you with the knowledge and resources needed to make informed investment decisions, ensuring your financial success. Welcome to a world of exceptional investment opportunities.</p>
-  </div>
 </body>
-
 </html>
