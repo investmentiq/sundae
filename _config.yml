@@ -6,7 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://en.investilogiusa.com
 
 # THEME SETTINGS
-tagline: Investing made easy
+tagline: Logistics and Real Estate Consultancy
 navigation:
   - {name: 'Home', link: '/'}
   - {name: 'About', link: '/about'}
