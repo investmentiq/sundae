@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Your Gateway to Investing in the USA
+title: Unlocking Opportunities in US Logistics and Real Estate Markets
 featured-img: sleek
 ---
 
