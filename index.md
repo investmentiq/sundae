@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Unlocking Opportunities in US Logistics and Real Estate Markets
+title: Unlocking Opportunities in US Logistics Markets
 featured-img: sleek
 ---
 

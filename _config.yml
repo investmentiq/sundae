@@ -1,12 +1,12 @@
 # SITE CONFIGURATION
-title: InvestiLogi USA
+title: InvestiLogiUSA
 description: >
  Your investments in the USA made easy. We're here for all your investment needs, including but not limited to logistics, real estate, and beyond. We offer full investment services, helping you find the best investment opportunities and handling the operations for your logistics investments, providing you passive income opportunities. We do all the hard work so you can enjoy watching your investments flourish. Contact us and learn how we can help you.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://en.investilogiusa.com
 
 # THEME SETTINGS
-tagline: Logistics and Real Estate Consultancy
+tagline: Logistics Management Consultancy
 navigation:
   - {name: 'Home', link: '/'}
   - {name: 'About', link: '/about'}
